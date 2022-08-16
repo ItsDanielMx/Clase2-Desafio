@@ -1,12 +1,12 @@
-import { Usuario } from "./class/Usuarios.js";
+import { Usuario } from "./class/Usuario.js";
 const mascotas = ["Gato", "Perro"]
-const user = new Usuario("Juan", "Martin", [{ nombre: "libro 1", autor: "autor 1" }], mascotas)
+const user = new Usuario("Daniel", "Ivan", [{ nombre: "La vida de Lazarillo de Tormes", autor: "Diego Hurtado de Mendoza" }], mascotas)
 
 const main = ()=>{
     console.log(user.getFullName())
-    user.addMascota("Axolote")
+    user.addMascota("Capibara")
     console.log(user.countMascotas())
-    user.addBook("libro2", "autor2")
+    user.addBook("El diablo de la botella", "Robert Louis Stevenson")
     console.log(user.getBookNames())
 }
 main()
